@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogServoConfig</class>
+ <widget class="QDialog" name="DialogServoConfig">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>264</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QGroupBox" name="groupBox_hware">
+     <property name="title">
+      <string>Hardware Settings</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="Layout_iicBus">
+        <item>
+         <widget class="QLabel" name="label_iicBus">
+          <property name="text">
+           <string>I2C Bus:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="combo_selBus">
+          <item>
+           <property name="text">
+            <string>Bus 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bus 0</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_defaultBus">
+          <property name="text">
+           <string>(Default Bus 1)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="Layout_iicAddress">
+        <item>
+         <widget class="QLabel" name="label_iicAddress">
+          <property name="text">
+           <string>I2C Address:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_Address">
+          <property name="text">
+           <string>0x40</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_defaultAddress">
+          <property name="text">
+           <string>(Default 0x40)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_sware">
+     <property name="title">
+      <string>Software Settings</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="Layout_frequency">
+        <item>
+         <widget class="QLabel" name="label_frequency">
+          <property name="text">
+           <string>Pulse Frequency:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_fvalue"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="combo_unit">
+          <item>
+           <property name="text">
+            <string>Hz</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Period</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Counts</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="Layout_minAngle">
+        <item>
+         <widget class="QLabel" name="label_minAngle">
+          <property name="text">
+           <string>Minimum angle:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_minAngleVal">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_40961">
+          <property name="text">
+           <string>/ 4096</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="Layout_maxAngle">
+        <item>
+         <widget class="QLabel" name="label_maxAngle">
+          <property name="text">
+           <string>Maximum angle:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_maxAngleVal">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_40962">
+          <property name="text">
+           <string>/ 4096</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

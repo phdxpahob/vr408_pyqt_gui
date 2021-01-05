@@ -678,6 +678,7 @@ class Ui_RosBotMainWindow(object):
         self.verticalLayout_7.setObjectName("verticalLayout_7")
         self.Button_animate = QtWidgets.QPushButton(self.groupBox_scared)
         self.Button_animate.setObjectName("Button_animate")
+        self.Button_animate.clicked.connect(onScaredClicked)
         self.verticalLayout_7.addWidget(self.Button_animate)
         self.Layout_shakes = QtWidgets.QHBoxLayout()
         self.Layout_shakes.setSpacing(6)

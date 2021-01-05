@@ -558,6 +558,8 @@ class Ui_RosBotMainWindow(object):
         self.speedSlider.setOrientation(QtCore.Qt.Horizontal)
         self.speedSlider.setTickPosition(QtWidgets.QSlider.TicksBothSides)
         self.speedSlider.setObjectName("speedSlider")
+        self.speedSlider.valueChanged.connect(onSliderChange)
+        
         self.horizontalLayout_5.addWidget(self.speedSlider)
         self.label_max = QtWidgets.QLabel(self.groupBox_speed)
         self.label_max.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
@@ -706,6 +708,8 @@ class Ui_RosBotMainWindow(object):
         self.verticalLayout_8.setObjectName("verticalLayout_8")
         self.Button_play = QtWidgets.QPushButton(self.groupBox_chirp)
         self.Button_play.setObjectName("Button_play")
+        self.Button_play.clicked.connect(onChirpClicked)
+        
         self.verticalLayout_8.addWidget(self.Button_play)
         self.beepsLayout = QtWidgets.QHBoxLayout()
         self.beepsLayout.setSpacing(6)
@@ -895,6 +899,22 @@ def JointCfg():
         
     else:
         ui.textBrowser_log.append("Joint configuration dialog rejected.")
+
+def onScaredClicked():
+    if ui.spinBox_shakes.value() == 0:
+        ui.textBrowser_log.append('Cannot animate scared with 0 shakes...')
+    else:
+        ui.textBrowser_log.append('Animate scared with ' + str(ui.spinBox_shakes.value()) + ' shakes and ' + str(ui.beeps_spinBox.value()) + ' beeps')
+
+def onChirpClicked():
+    if ui.spinBox_beeps.value() == 0:
+        ui.textBrowser_log.append('Cannot chirp with 0 beeps...')
+    else:
+        ui.textBrowser_log.append('Chirp with ' + str(ui.spinBox_beeps.value()) + ' beeps.')
+
+def onSliderChange(value):
+    print('slider value is now: {}'.format(value))
+    ui.textBrowser_log.append('slider value is now: {}'.format(value))
         
 def showAbout():
     msgBox = QtWidgets.QMessageBox()

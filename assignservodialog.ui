@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>473</width>
+    <width>627</width>
     <height>246</height>
    </rect>
   </property>
@@ -44,18 +44,8 @@
         <string>Hip Joints</string>
        </property>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_hFL">
-          <property name="text">
-           <string>hipFrontLeft</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QComboBox" name="combo_hfLeft">
+        <item row="2" column="1">
+         <widget class="QComboBox" name="combo_hrLeft">
           <item>
            <property name="text">
             <string>Channel 0</string>
@@ -136,6 +126,100 @@
             <string>Channel 15</string>
            </property>
           </item>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="combo_hrRight">
+          <item>
+           <property name="text">
+            <string>Channel 0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 12</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 13</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 14</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Channel 15</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_hFL">
+          <property name="text">
+           <string>hipFrontLeft</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
          </widget>
         </item>
         <item row="1" column="0">
@@ -148,90 +232,6 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="1">
-         <widget class="QComboBox" name="combo_hfRight">
-          <item>
-           <property name="text">
-            <string>Channel 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 1</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 2</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 3</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 4</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 5</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 6</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 7</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 8</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 9</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 10</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 11</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 12</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 13</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 14</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Channel 15</string>
-           </property>
-          </item>
-         </widget>
-        </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_hRL">
           <property name="text">
@@ -242,8 +242,8 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="1">
-         <widget class="QComboBox" name="combo_hrLeft">
+        <item row="0" column="1">
+         <widget class="QComboBox" name="combo_hfLeft">
           <item>
            <property name="text">
             <string>Channel 0</string>
@@ -336,8 +336,8 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="1">
-         <widget class="QComboBox" name="combo_hrRight">
+        <item row="1" column="1">
+         <widget class="QComboBox" name="combo_hfRight">
           <item>
            <property name="text">
             <string>Channel 0</string>
@@ -420,6 +420,34 @@
           </item>
          </widget>
         </item>
+        <item row="0" column="2">
+         <widget class="QCheckBox" name="flip_hfLeft">
+          <property name="text">
+           <string>Flipped</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="flip_hfRight">
+          <property name="text">
+           <string>Flipped</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QCheckBox" name="flip_hrLeft">
+          <property name="text">
+           <string>Flipped</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QCheckBox" name="flip_hrRight">
+          <property name="text">
+           <string>Flipped</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
      </item>
@@ -429,18 +457,18 @@
         <string>Knee Joints</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_kFL">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_kRL">
           <property name="text">
-           <string>kneeFrontLeft</string>
+           <string>kneeRearLeft</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
           </property>
          </widget>
         </item>
-        <item row="0" column="1">
-         <widget class="QComboBox" name="combo_kFLeft">
+        <item row="2" column="1">
+         <widget class="QComboBox" name="combo_kRLeft">
           <item>
            <property name="text">
             <string>Channel 0</string>
@@ -617,18 +645,8 @@
           </item>
          </widget>
         </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_kRL">
-          <property name="text">
-           <string>kneeRearLeft</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QComboBox" name="combo_kRLeft">
+        <item row="3" column="1">
+         <widget class="QComboBox" name="combo_kRRight">
           <item>
            <property name="text">
             <string>Channel 0</string>
@@ -721,8 +739,18 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="1">
-         <widget class="QComboBox" name="combo_kRRight">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_kFL">
+          <property name="text">
+           <string>kneeFrontLeft</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="combo_kFLeft">
           <item>
            <property name="text">
             <string>Channel 0</string>
@@ -803,6 +831,34 @@
             <string>Channel 15</string>
            </property>
           </item>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QCheckBox" name="flip_kfLeft">
+          <property name="text">
+           <string>Flipped</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="flip_kfRight">
+          <property name="text">
+           <string>Flipped</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QCheckBox" name="flip_krLeft">
+          <property name="text">
+           <string>Flipped</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QCheckBox" name="flip_krRight">
+          <property name="text">
+           <string>Flipped</string>
+          </property>
          </widget>
         </item>
        </layout>

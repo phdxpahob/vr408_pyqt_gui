@@ -124,6 +124,12 @@
                </item>
                <item>
                 <widget class="QSlider" name="speedSlider">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="tracking">
+                  <bool>false</bool>
+                 </property>
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
                  </property>
@@ -223,37 +229,30 @@
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
-            <widget class="QRadioButton" name="radioB_fLeft">
+            <widget class="QPushButton" name="Button_waveFLeft">
              <property name="text">
               <string>Front Left</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioB_fRight">
+            <widget class="QPushButton" name="Button_waveFRight">
              <property name="text">
               <string>Front Right</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioB_rLeft">
+            <widget class="QPushButton" name="Button_waveRLeft">
              <property name="text">
               <string>Rear Left</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioB_rRight">
+            <widget class="QPushButton" name="Button_waveRRight">
              <property name="text">
               <string>Rear Right</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Button_wave">
-             <property name="text">
-              <string>Wave</string>
              </property>
             </widget>
            </item>
@@ -267,37 +266,30 @@
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_3">
            <item>
-            <widget class="QRadioButton" name="radioB_left">
+            <widget class="QPushButton" name="Button_leanLeft">
              <property name="text">
               <string>Left</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioB_right">
+            <widget class="QPushButton" name="Button_leanRight">
              <property name="text">
               <string>Right</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioB_forward">
+            <widget class="QPushButton" name="Button_leanForward">
              <property name="text">
               <string>Forward</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioB_backward">
+            <widget class="QPushButton" name="Button_leanBackward">
              <property name="text">
               <string>Backward</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Button_lean">
-             <property name="text">
-              <string>Lean</string>
              </property>
             </widget>
            </item>
@@ -390,7 +382,7 @@
      <x>0</x>
      <y>0</y>
      <width>517</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -421,33 +413,61 @@
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionOpen_configuration"/>
+   <addaction name="actionSave_configuration"/>
    <addaction name="separator"/>
+   <addaction name="actionJoint_configuration"/>
+   <addaction name="actionServo_configuration"/>
+   <addaction name="separator"/>
+   <addaction name="action_Contents"/>
+   <addaction name="action_About"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="action_Contents">
+   <property name="icon">
+    <iconset theme="help-contents">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>&amp;Contents</string>
    </property>
   </action>
   <action name="action_About">
+   <property name="icon">
+    <iconset theme="help-about">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>&amp;About</string>
    </property>
   </action>
   <action name="actionExit">
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>Exit</string>
    </property>
   </action>
   <action name="actionOpen_configuration">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="document-open">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Open configuration...</string>
@@ -455,18 +475,30 @@
   </action>
   <action name="actionSave_configuration">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="document-save">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>Save configuration...</string>
    </property>
   </action>
   <action name="actionServo_configuration">
+   <property name="icon">
+    <iconset theme="emblem-system">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>Servo configuration...</string>
    </property>
   </action>
   <action name="actionJoint_configuration">
+   <property name="icon">
+    <iconset theme="emblem-system">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
     <string>Joint configuration...</string>
    </property>
